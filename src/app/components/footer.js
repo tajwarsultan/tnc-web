@@ -1,21 +1,22 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from '../../../public/logo.png'
+import Footerbtn from "./footerBtn"
 
 export default function Footer() {
   return (
     <footer className="bg-[#1a1f36] border-t border-gray-800 py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mx-auto">
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Image src={logo} alt="TNC Crypto Logo" width={40} height={40}  className="w-8 h-8" />
+      <div className="container  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto px-4 md:px-8 lg:px-38">
+          <div >
+            <div className="flex items-center space-x-1 mb-4">
+              <Image src={logo} alt="TNC Crypto Logo" width={40} height={40}  className="w-8 h-8 " />
               <span className="text-white font-bold text-xl">TNC CRYPTO</span>
             </div>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-300 mb-4">
               Embrace the world of digital currency and redefine your investment strategies with us.
             </p>
-            <div className="text-gray-400 space-y-2">
+            <div className="text-gray-300 space-y-4">
               <p>4517 Washington Ave, Manchester, Kentucky 39495</p>
               <p>(400) 555-XXXX</p>
               <p>support@tnccrypto.com</p>
@@ -24,34 +25,34 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Explore</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-4">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/about" className="text-gray-300 hover:text-teal-400 transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/why-choose" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/why-choose" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Why Choose
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/services" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact-us" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/contact-us" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link href="/licensing" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/licensing" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Licensing
                 </Link>
               </li>
@@ -60,24 +61,24 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white font-bold text-lg mb-4">Services</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-4">
               <li>
-                <Link href="/crypto-trading" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/crypto-trading" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Crypto Trading
                 </Link>
               </li>
               <li>
-                <Link href="/education-resources" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/education-resources" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Education Resources
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/portfolio" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/crypto-news" className="text-gray-400 hover:text-teal-400 transition-colors">
+                <Link href="/crypto-news" className="text-gray-300 hover:text-teal-400 transition-colors">
                   Crypto News
                 </Link>
               </li>
@@ -86,19 +87,13 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white font-bold text-lg mb-4">TNC Crypto Newsletter</h3>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-300 mb-4">
               Subscribe to our newsletter for weekly updates, market insights, and special offers.
             </p>
-            <div className="flex border bg-gray-800 border-amber-100 rounded-full">
-              <input
-                type="email"
-                placeholder="Your Email Here"
-                className="text-white px-3 py-1 rounded-full focus:outline-none w-2xl"
-              />
-              <button className="bg-teal-500  hover:bg-yellow-600 rounded-full text-white px-3 m-1 py-1 transition-all duration-300">
-                Subscribe
-              </button>
-            </div>
+           <div>
+           <Footerbtn/>
+           </div>
+            
             <div className="flex space-x-4 mt-6">
               <Link href="#" className="text-gray-400 hover:text-teal-400 transition-colors">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -131,7 +126,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-gray-800 text-center text-gray-400 text-sm">
+        <div className="mt-10 w-full p-6 bg-black text-center text-gray-400 text-sm px-0">
           <p>Copyright © 2025 TNC Crypto | Designed by ThemeRoots LLC - Powered by Webflow.com</p>
         </div>
       </div>

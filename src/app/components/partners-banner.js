@@ -16,12 +16,12 @@ export default function PartnersBanner() {
       <div className="max-w-full mx-auto">
         <div className="flex items-center justify-around flex-wrap gap-8 md:gap-12">
           {partners.map((partner) => (
-            <div key={partner.name} className="relative h-8 w-24 md:h-10 md:w-32">
+            <div key={partner.name} className="relative h-3 w-12  lg:w-24 md:h-10 md:w-32">
               <Image
                 src={partner.logo || "/placeholder.svg"}
                 alt={`${partner.name} logo`}
                 fill
-                className="object-contain font-bold text-3xl filter brightness-0 invert"
+                className="object-contain font-bold text-black text-xl lg:text-3xl filter brightness-0 invert"
               />
             </div>
           ))}

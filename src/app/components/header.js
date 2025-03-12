@@ -30,12 +30,12 @@ export default function Header() {
         </Link>
 
         {/* Mobile menu button */}
-        <button className="md:hidden text-white" onClick={toggleMenu}>
+        <button className="lg:hidden text-gray-400" onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden lg:flex items-center space-x-6">
           <Link href="#Home" className="text-yellow-400 hover:text-yellow-300">
             Home
           </Link>
@@ -64,29 +64,29 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-16 left-0 right-0 bg-black z-50 p-4">
-            <nav className="flex flex-col space-y-4">
-              <Link href="/" className="text-yellow-400 hover:text-yellow-300 py-2">
+          <div className="lg:hidden absolute top-16 left-0 right-0 bg-gray-900 z-50 p-4">
+            <nav className="flex flex-col space-y-4 text-center ">
+              <Link href="/" className="text-yellow-400 hover:text-yellow-300 py-2 border-b border-gray-700">
                 Home
               </Link>
-              <Link href="/about" className="text-white hover:text-yellow-300 py-2">
+              <Link href="/about" className="text-white hover:text-yellow-300 py-2 border-b border-gray-700">
                 About
               </Link>
-              <Link href="/why-choose-us" className="text-white hover:text-yellow-300 py-2">
+              <Link href="/why-choose-us" className="text-white hover:text-yellow-300 py-2 border-b border-gray-700">
                 Why Choose Us
               </Link>
-              <Link href="/services" className="text-white hover:text-yellow-300 py-2">
+              <Link href="/services" className="text-white hover:text-yellow-300 py-2 border-b border-gray-700">
                 Services
               </Link>
-              <Link href="/pricing" className="text-white hover:text-yellow-300 py-2">
+              <Link href="/pricing" className="text-white hover:text-yellow-300 py-2 border-b border-gray-700">
                 Pricing
               </Link>
-              <Link href="/faq" className="text-white hover:text-yellow-300 py-2">
+              <Link href="/faq" className="text-white hover:text-yellow-300 py-2 border-b border-gray-700">
                 FAQ
               </Link>
               <Link
                 href="/contact"
-                className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md transition-colors text-center"
+                className="bg-teal-500 hover:bg-teal-600 mx-auto text-white px-4 py-2 rounded-md transition-colors text-center"
               >
                 Contact Us
               </Link>

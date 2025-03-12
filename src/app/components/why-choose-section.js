@@ -1,5 +1,7 @@
 import Image from "next/image"
-import { Award, BarChart2, Shield, Headphones } from "lucide-react"
+import {  BarChart2, Shield, Headphones } from "lucide-react"
+// Award,
+import settingIcn from '../../../public/setting-icn.png'
 
 export default function WhyChooseSection() {
   return (
@@ -14,7 +16,8 @@ export default function WhyChooseSection() {
           {/* Feature 1 */}
           <div className="p-6 rounded-lg text-center">
             <div className="flex justify-center mb-4">
-              <Award className="h-12 w-12 text-yellow-400" />
+              {/* <Award className="h-12 w-12 text-yellow-400" /> */}
+              <Image src={settingIcn} alt="Award Icon" width={48} height={48} className="object-contain" />
             </div>
             <h3 className="text-xl font-bold mb-3 text-black">Unmatched Expertise</h3>
             <p className=" text-gray-500">
