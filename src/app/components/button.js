@@ -24,10 +24,10 @@ export default function ContactLink() {
         {/* Text to Icon Transition */}
         <motion.span
           variants={{
-            initial: { opacity: 1, y: 0 },
-            hover: { opacity: 0, y: 10 }, // Move up when hovered
+            initial: { opacity: 0, y: 1 },
+            hover: { opacity: 0, y: -10 }, // Move up when hovered
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.3 }}
           className="relative text-white"
         >
           Contact Us
@@ -35,10 +35,10 @@ export default function ContactLink() {
 
         <motion.span
           variants={{
-            initial: { opacity: 0, y: -10 }, // Start above
+            initial: { opacity: 10, y: 0 }, // Start above
             hover: { opacity: 1, y: 0 }, // Move down into view
           }}
-          transition={{ duration: 0.2 }}
+          transition={{ duration: 0.3 }}
           className="absolute text-[#2dd4bf]"
         >
           <Mail size={20} />
